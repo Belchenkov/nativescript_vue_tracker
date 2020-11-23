@@ -1,0 +1,10 @@
+# JetBrains project files
+.idea
+.vscode
+debug.log
+# NPM
+node_modules
+
+# NativeScript application
+hooks
+platforms
