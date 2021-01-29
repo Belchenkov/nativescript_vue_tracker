@@ -2,7 +2,9 @@
     <Page>
         <ActionBar title="Welcome to NativeScript-Vue!"/>
         <GridLayout columns="*" rows="*">
-            <Label class="message" :text="msg" col="0" row="0"/>
+            <Button
+                @onTap="hi"
+                class="message" :text="msg" col="0" row="0"/>
         </GridLayout>
     </Page>
 </template>
@@ -12,6 +14,11 @@
     data() {
       return {
         msg: 'Hello World!!!!!!'
+      }
+    },
+    methods: {
+      hi() {
+        console.log('Say Hello')
       }
     }
   }
