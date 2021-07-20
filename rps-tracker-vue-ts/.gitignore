@@ -4,7 +4,6 @@
 debug.log
 # NPM
 node_modules
-rpsapi/node_modules
 
 # NativeScript application
 hooks
