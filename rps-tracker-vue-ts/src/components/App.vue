@@ -4,21 +4,25 @@
         <GridLayout columns="*" rows="*">
             <Button
                 @onTap="hi"
-                class="message" :text="msg" col="0" row="0"/>
+                class="message"
+                :text="msg"
+            />
         </GridLayout>
     </Page>
 </template>
 
 <script lang="ts">
+  import { performTestFetch } from "@/components/helpers";
+
   export default {
     data() {
       return {
-        msg: 'App Runing!'
+        msg: 'App Running!'
       }
     },
     methods: {
       hi() {
-        console.log('Say Hello')
+        performTestFetch();
       }
     }
   }

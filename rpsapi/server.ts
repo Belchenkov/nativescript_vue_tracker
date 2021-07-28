@@ -7,13 +7,17 @@ import {
     Response
 } from 'express';
 
+import { MessageObject } from "./models/domain/message-object.model";
+
 const app: Express = express();
 const router: Router = express.Router();
 
 router.get('/', (req: Request, res: Response) => {
-    return res.json({
-        message: "HI there, welcome to NativeScript Vue!!!"
-    });
+    const messageObj: MessageObject = {
+        message: "HI there, welcome to NativeScript Vue"
+    };
+
+    return res.json(messageObj);
 });
 
 router.get('/backlog', (req: Request, res: Response) => {
