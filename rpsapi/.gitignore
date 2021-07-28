@@ -1,6 +1,1 @@
-# JetBrains project files
-.idea
-.vscode
-debug.log
-# NPM
-node_modules
+/node_modules
